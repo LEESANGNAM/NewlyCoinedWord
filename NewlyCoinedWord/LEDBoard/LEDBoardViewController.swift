@@ -52,7 +52,6 @@ class LEDBoardViewController: UIViewController, UITextFieldDelegate {
     
     func startBlinkingAnimation() {
             UIView.animate(withDuration: 0.5, delay: 0, options: [.autoreverse, .repeat], animations: {
-                self.resultLabel.textColor = self.RandomColor()
                 self.resultLabel.alpha = 0 // 라벨의 투명도를 0으로 설정하여 반짝이게 만듭니다.
             }, completion: nil)
         }
@@ -81,6 +80,7 @@ class LEDBoardViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func resultButtonTapped(_ sender: UIButton) {
         resultLabel.text = ledTextField.text
+        view.endEditing(true)
     }
     
     @IBAction func backButtonTapped(_ sender: UIButton) {
