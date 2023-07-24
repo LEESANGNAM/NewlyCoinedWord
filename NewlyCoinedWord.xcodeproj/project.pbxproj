@@ -63,15 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D60A64032A6E6C21007BCC1D /* LEDBoard */ = {
-			isa = PBXGroup;
-			children = (
-				D60A64042A6E6C6C007BCC1D /* LEDBoard.storyboard */,
-				D60A64062A6E6E29007BCC1D /* LEDBoardViewController.swift */,
-			);
-			name = LEDBoard;
-			sourceTree = "<group>";
-		};
 		D64A17872A6C47660061A508 /* AutoLayoutStudy */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +95,7 @@
 		D65890B42A68DAAF00705A58 /* NewlyCoinedWord */ = {
 			isa = PBXGroup;
 			children = (
-				D60A64032A6E6C21007BCC1D /* LEDBoard */,
+				D69CBA392A6EA5B300117376 /* LEDBoard */,
 				D64A17872A6C47660061A508 /* AutoLayoutStudy */,
 				D65890CD2A6A0BEE00705A58 /* SampleViewController */,
 				D65890B52A68DAAF00705A58 /* AppDelegate.swift */,
@@ -128,6 +119,15 @@
 				D65890D02A6A10E600705A58 /* AutolayoutExampleStoryboard.storyboard */,
 			);
 			path = SampleViewController;
+			sourceTree = "<group>";
+		};
+		D69CBA392A6EA5B300117376 /* LEDBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D60A64042A6E6C6C007BCC1D /* LEDBoard.storyboard */,
+				D60A64062A6E6E29007BCC1D /* LEDBoardViewController.swift */,
+			);
+			path = LEDBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
