@@ -203,11 +203,11 @@
                                     <action selector="searchButtonTapped:" destination="hWW-Lt-BDO" eventType="touchUpInside" id="BKV-Fa-fA5"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="5RM-Uo-jzU">
-                                <rect key="frame" x="30" y="797.66666666666663" width="354" height="34.333333333333371"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5RM-Uo-jzU">
+                                <rect key="frame" x="30" y="777.66666666666663" width="354" height="54.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lJ-fL-CXl">
-                                        <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="54.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="프로필"/>
                                         <connections>
@@ -215,7 +215,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YE-Ic-hGA">
-                                        <rect key="frame" x="129.66666666666666" y="0.0" width="94.666666666666657" height="34.333333333333336"/>
+                                        <rect key="frame" x="93.666666666666686" y="0.0" width="73.333333333333314" height="54.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="배민"/>
                                         <connections>
@@ -223,12 +223,17 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJl-DX-wQL">
-                                        <rect key="frame" x="259.33333333333331" y="0.0" width="94.666666666666686" height="34.333333333333336"/>
+                                        <rect key="frame" x="187" y="0.0" width="73.666666666666686" height="54.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="뮤직"/>
                                         <connections>
                                             <segue destination="YMk-Iq-owl" kind="presentation" modalPresentationStyle="fullScreen" id="FzV-Io-sTb"/>
                                         </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWN-wP-k9c">
+                                        <rect key="frame" x="280.66666666666669" y="0.0" width="73.333333333333314" height="54.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="LEDBoard"/>
                                     </button>
                                 </subviews>
                             </stackView>

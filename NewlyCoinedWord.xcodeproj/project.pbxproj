@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60A64052A6E6C6C007BCC1D /* LEDBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60A64042A6E6C6C007BCC1D /* LEDBoard.storyboard */; };
 		D63E0BB42A6D6F3300D0DD05 /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63E0BB32A6D6F3300D0DD05 /* Music.storyboard */; };
 		D63E0BB62A6D6F4000D0DD05 /* Food.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63E0BB52A6D6F4000D0DD05 /* Food.storyboard */; };
 		D63E0BB82A6D71C100D0DD05 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E0BB72A6D71C100D0DD05 /* MusicViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D60A64042A6E6C6C007BCC1D /* LEDBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LEDBoard.storyboard; sourceTree = "<group>"; };
 		D63E0BB32A6D6F3300D0DD05 /* Music.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Music.storyboard; sourceTree = "<group>"; };
 		D63E0BB52A6D6F4000D0DD05 /* Food.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Food.storyboard; sourceTree = "<group>"; };
 		D63E0BB72A6D71C100D0DD05 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D60A64032A6E6C21007BCC1D /* LEDBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D60A64042A6E6C6C007BCC1D /* LEDBoard.storyboard */,
+			);
+			name = LEDBoard;
+			sourceTree = "<group>";
+		};
 		D64A17872A6C47660061A508 /* AutoLayoutStudy */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 		D65890B42A68DAAF00705A58 /* NewlyCoinedWord */ = {
 			isa = PBXGroup;
 			children = (
+				D60A64032A6E6C21007BCC1D /* LEDBoard */,
 				D64A17872A6C47660061A508 /* AutoLayoutStudy */,
 				D65890CD2A6A0BEE00705A58 /* SampleViewController */,
 				D65890B52A68DAAF00705A58 /* AppDelegate.swift */,
@@ -175,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D65890C22A68DAB000705A58 /* LaunchScreen.storyboard in Resources */,
+				D60A64052A6E6C6C007BCC1D /* LEDBoard.storyboard in Resources */,
 				D65890D12A6A10E600705A58 /* AutolayoutExampleStoryboard.storyboard in Resources */,
 				D63E0BB42A6D6F3300D0DD05 /* Music.storyboard in Resources */,
 				D65890CF2A6A0F2900705A58 /* AutolayoutPracticeStoryboard.storyboard in Resources */,
