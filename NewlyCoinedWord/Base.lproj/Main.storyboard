@@ -234,6 +234,9 @@
                                         <rect key="frame" x="280.66666666666669" y="0.0" width="73.333333333333314" height="54.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="LEDBoard"/>
+                                        <connections>
+                                            <segue destination="SCy-nF-nOv" kind="presentation" modalPresentationStyle="fullScreen" id="p0N-cd-OUX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -306,6 +309,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvR-4Y-u3n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1928" y="-12"/>
+        </scene>
+        <!--LEDBoard-->
+        <scene sceneID="Xh7-9s-FmV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LEDBoard" id="SCy-nF-nOv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bWZ-Jb-w8X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1936" y="99"/>
         </scene>
     </scenes>
     <resources>

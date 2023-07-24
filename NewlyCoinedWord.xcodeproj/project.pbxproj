@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D60A64052A6E6C6C007BCC1D /* LEDBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60A64042A6E6C6C007BCC1D /* LEDBoard.storyboard */; };
+		D60A64072A6E6E29007BCC1D /* LEDBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A64062A6E6E29007BCC1D /* LEDBoardViewController.swift */; };
 		D63E0BB42A6D6F3300D0DD05 /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63E0BB32A6D6F3300D0DD05 /* Music.storyboard */; };
 		D63E0BB62A6D6F4000D0DD05 /* Food.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63E0BB52A6D6F4000D0DD05 /* Food.storyboard */; };
 		D63E0BB82A6D71C100D0DD05 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E0BB72A6D71C100D0DD05 /* MusicViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		D60A64042A6E6C6C007BCC1D /* LEDBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LEDBoard.storyboard; sourceTree = "<group>"; };
+		D60A64062A6E6E29007BCC1D /* LEDBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBoardViewController.swift; sourceTree = "<group>"; };
 		D63E0BB32A6D6F3300D0DD05 /* Music.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Music.storyboard; sourceTree = "<group>"; };
 		D63E0BB52A6D6F4000D0DD05 /* Food.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Food.storyboard; sourceTree = "<group>"; };
 		D63E0BB72A6D71C100D0DD05 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				D60A64042A6E6C6C007BCC1D /* LEDBoard.storyboard */,
+				D60A64062A6E6E29007BCC1D /* LEDBoardViewController.swift */,
 			);
 			name = LEDBoard;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64A178B2A6C4B440061A508 /* ProfileViewController.swift in Sources */,
+				D60A64072A6E6E29007BCC1D /* LEDBoardViewController.swift in Sources */,
 				D6D586DD2A6A4AEC001312E6 /* WordViewController.swift in Sources */,
 				D65890CA2A68DBE300705A58 /* DateViewController.swift in Sources */,
 				D65890BA2A68DAAF00705A58 /* ViewController.swift in Sources */,
