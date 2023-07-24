@@ -40,6 +40,11 @@ class LEDBoardViewController: UIViewController, UITextFieldDelegate {
         resultLabel.font = UIFont.boldSystemFont(ofSize: 150)
         resultLabel.textAlignment = .center
     }
+    // 랜덤컬러
+    func RandomColor() -> UIColor {
+        return UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1.0)
+    }
+    
     func startBlinkingAnimation() {
             UIView.animate(withDuration: 0.5, delay: 0, options: [.autoreverse, .repeat], animations: {
                 self.resultLabel.alpha = 0 // 라벨의 투명도를 0으로 설정하여 반짝이게 만듭니다.
@@ -51,9 +56,10 @@ class LEDBoardViewController: UIViewController, UITextFieldDelegate {
            self.resultLabel.alpha = 1 // 라벨의 투명도를 원래대로 복원 * 필수
        }
     
-    
+    // 반짝이면서 컬러바꾸기
     @IBAction func BlinkingLable(_ sender: UIButton) {
         isBlinking.toggle()
+        resultLabel.textColor = RandomColor()
         if isBlinking{
             startBlinkingAnimation()
         }else {
