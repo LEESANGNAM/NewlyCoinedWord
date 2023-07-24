@@ -50,7 +50,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="languageButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dQH-Er-uHG"/>
+                                                    <action selector="BlinkingLable:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lWv-Ka-q4b"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -94,6 +94,7 @@
                         <outlet property="languageButton" destination="YpB-yU-We4" id="fqX-eI-GU8"/>
                         <outlet property="ledTextField" destination="if4-5Y-y1J" id="vXi-lM-2tL"/>
                         <outlet property="resultButton" destination="TjE-Ri-vMd" id="5zQ-v8-D1j"/>
+                        <outlet property="resultLabel" destination="CHw-FY-Cqm" id="eZB-Tm-RIk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

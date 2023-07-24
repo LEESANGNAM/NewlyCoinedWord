@@ -10,15 +10,26 @@ import UIKit
 class LEDBoardViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var ledTextField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
     @IBOutlet weak var resultButton: UIButton!
     @IBOutlet weak var languageButton: UIButton!
+    
+    var isBlinking = false // 반짝이는 상태
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ledTextField.delegate = self
         languageChage() // 버튼의 타이틀 업데이트
-        // Do any additional setup after loading the view.
     }
+    
+    func setUpLabel(){
+        resultLabel.text = "글자를 입력해주세요"
+        resultLabel.numberOfLines = 1
+        resultLabel.adjustsFontSizeToFitWidth = true //글자 크기 자동조정 활성화
+    }
+  
     
     // 현재 키보드의 인풋모드를 받아오는 메서드
     func getTextInputMode() -> String? {
@@ -43,11 +54,29 @@ class LEDBoardViewController: UIViewController, UITextFieldDelegate {
         languageChage()
         return true
     }
-    
 
- 
+    func startBlinkingAnimation() {
+            UIView.animate(withDuration: 0.5, delay: 0, options: [.autoreverse, .repeat], animations: {
+                self.resultLabel.alpha = 0 // 라벨의 투명도를 0으로 설정하여 반짝이게 만듭니다.
+            }, completion: nil)
+        }
+    
+    func stopBlinkingAnimation() {
+           self.resultLabel.layer.removeAllAnimations() // 애니메이션 멈춤 이거만 적용했더니 라벨이 사라짐
+           self.resultLabel.alpha = 1 // 라벨의 투명도를 원래대로 복원 * 필수
+       }
     
     
+    @IBAction func BlinkingLable(_ sender: UIButton) {
+        isBlinking.toggle()
+        
+        if isBlinking{
+            startBlinkingAnimation()
+        }else {
+            stopBlinkingAnimation()
+        }
+            
+    }
     
     
     @IBAction func backButtonTapped(_ sender: UIButton) {
