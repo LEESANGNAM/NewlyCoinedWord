@@ -84,6 +84,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CHw-FY-Cqm" secondAttribute="trailing" constant="10" id="7lo-7E-ZJw"/>
                             <constraint firstItem="CHw-FY-Cqm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="GEc-ci-Pq2"/>
@@ -95,15 +96,24 @@
                             <constraint firstItem="CHw-FY-Cqm" firstAttribute="top" secondItem="rOQ-ay-WaH" secondAttribute="bottom" constant="10" id="sRt-vs-xTX"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rOQ-ay-WaH" secondAttribute="trailing" constant="30" id="za1-PE-x6L"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4UN-1f-d10" appends="YES" id="xJ0-wi-Zdi"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="languageButton" destination="YpB-yU-We4" id="fqX-eI-GU8"/>
                         <outlet property="ledTextField" destination="if4-5Y-y1J" id="vXi-lM-2tL"/>
                         <outlet property="resultButton" destination="TjE-Ri-vMd" id="5zQ-v8-D1j"/>
                         <outlet property="resultLabel" destination="CHw-FY-Cqm" id="eZB-Tm-RIk"/>
+                        <outlet property="topView" destination="rOQ-ay-WaH" id="Q5v-ml-sAC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4UN-1f-d10">
+                    <connections>
+                        <action selector="TapGestureTapped:" destination="Y6W-OH-hqX" id="73m-oY-Yon"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-75.352112676056336" y="238.93129770992365"/>
         </scene>

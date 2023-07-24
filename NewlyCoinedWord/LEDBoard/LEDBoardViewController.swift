@@ -12,6 +12,7 @@ class LEDBoardViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ledTextField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var resultButton: UIButton!
     @IBOutlet weak var languageButton: UIButton!
     
@@ -42,11 +43,16 @@ class LEDBoardViewController: UIViewController, UITextFieldDelegate {
     }
     // 랜덤컬러
     func RandomColor() -> UIColor {
-        return UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1.0)
+        let red = CGFloat.random(in: 0...1)
+        let green = CGFloat.random(in: 0...1)
+        let blue = CGFloat.random(in: 0...1)
+        let color = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+        return color
     }
     
     func startBlinkingAnimation() {
             UIView.animate(withDuration: 0.5, delay: 0, options: [.autoreverse, .repeat], animations: {
+                self.resultLabel.textColor = self.RandomColor()
                 self.resultLabel.alpha = 0 // 라벨의 투명도를 0으로 설정하여 반짝이게 만듭니다.
             }, completion: nil)
         }
@@ -79,6 +85,10 @@ class LEDBoardViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func backButtonTapped(_ sender: UIButton) {
         dismiss(animated: true)
+    }
+    @IBAction func TapGestureTapped(_ sender: UITapGestureRecognizer) {
+        topView.isHidden.toggle()
+        view.endEditing(true)
     }
     
     
