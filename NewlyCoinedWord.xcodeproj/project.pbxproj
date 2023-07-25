@@ -25,6 +25,7 @@
 		D65890CC2A69664A00705A58 /* NewWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65890CB2A69664A00705A58 /* NewWordViewController.swift */; };
 		D65890CF2A6A0F2900705A58 /* AutolayoutPracticeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65890CE2A6A0F2900705A58 /* AutolayoutPracticeStoryboard.storyboard */; };
 		D65890D12A6A10E600705A58 /* AutolayoutExampleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65890D02A6A10E600705A58 /* AutolayoutExampleStoryboard.storyboard */; };
+		D681FE392A70339E00C1D6CB /* NewWordEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681FE382A70339E00C1D6CB /* NewWordEnum.swift */; };
 		D6D586DD2A6A4AEC001312E6 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D586DC2A6A4AEC001312E6 /* WordViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		D65890CB2A69664A00705A58 /* NewWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewController.swift; sourceTree = "<group>"; };
 		D65890CE2A6A0F2900705A58 /* AutolayoutPracticeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = AutolayoutPracticeStoryboard.storyboard; path = NewlyCoinedWord/AutolayoutPracticeStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		D65890D02A6A10E600705A58 /* AutolayoutExampleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutolayoutExampleStoryboard.storyboard; sourceTree = "<group>"; };
+		D681FE382A70339E00C1D6CB /* NewWordEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordEnum.swift; sourceTree = "<group>"; };
 		D6D586DC2A6A4AEC001312E6 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 				D65890B72A68DAAF00705A58 /* SceneDelegate.swift */,
 				D65890BB2A68DAAF00705A58 /* Main.storyboard */,
 				D65890B92A68DAAF00705A58 /* ViewController.swift */,
+				D681FE382A70339E00C1D6CB /* NewWordEnum.swift */,
 				D65890CB2A69664A00705A58 /* NewWordViewController.swift */,
 				D65890C92A68DBE300705A58 /* DateViewController.swift */,
 				D65890BE2A68DAB000705A58 /* Assets.xcassets */,
@@ -210,6 +213,7 @@
 				D64A178B2A6C4B440061A508 /* ProfileViewController.swift in Sources */,
 				D60A64072A6E6E29007BCC1D /* LEDBoardViewController.swift in Sources */,
 				D6D586DD2A6A4AEC001312E6 /* WordViewController.swift in Sources */,
+				D681FE392A70339E00C1D6CB /* NewWordEnum.swift in Sources */,
 				D65890CA2A68DBE300705A58 /* DateViewController.swift in Sources */,
 				D65890BA2A68DAAF00705A58 /* ViewController.swift in Sources */,
 				D63E0BBA2A6D71C900D0DD05 /* FoodViewController.swift in Sources */,

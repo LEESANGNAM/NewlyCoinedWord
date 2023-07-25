@@ -56,7 +56,7 @@ class NewWordViewController: UIViewController {
     
     // 버튼 리셋함수
     func listButtonTitleReset(){
-        var testList: [String] = Array(newWord.keys) // 키만뽑기
+        var testList: [String] = Array(newWord.keys) // 키만뽑기 NewWords.allCasesNewWords.allCases
         for button in listButtons{ // 버튼 한개당 키뽑은 배열의 인덱스를 랜덤으로 뽑아
 //            let index = Int.random(in: button.tag - 10...button.tag - 5) 갯수가 한정적임
             let index = Int.random(in: 0...testList.count - 1)
@@ -109,7 +109,7 @@ class NewWordViewController: UIViewController {
     // 옵셔널 바인딩을 통해 값이 바인딩 되거나, 바인딩된 값이 빈값이 아니고(""), 딕셔너리에 있는 항목이면
     func checkTextValidity(text checktext: String?){
         // 넘어온 텍스트 값의 공백을 제거 한 후 검사.
-        guard let text = checktext?.replacingOccurrences(of: " ", with: ""), !text.isEmpty, let resultText = newWord[text]
+        guard let text = checktext?.replacingOccurrences(of: " ", with: ""), !text.isEmpty, let resultText = newWord[text] // enum으로 데이터를 case 신조어 = "뜻 " 으로 선언하였다. .신조어 로 되어있어 String으로 받은 신조어를 골라내는 법을 다시 공부해야겠다.
         else {// 아니라면 텍스트필드 지우고 얼럿 생성하는 함수로 이동
             showAlert(word: checktext?.replacingOccurrences(of: " ", with: ""));
             searchTextField.text = ""
